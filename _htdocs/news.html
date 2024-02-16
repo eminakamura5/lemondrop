@@ -1,0 +1,127 @@
+<!doctype html>
+<html>
+
+<head>
+<meta charset="UTF-8"> 
+<title>Cafe and Bar LEMON DROP</title>
+<meta name="description" content="サイトの説明が入ります"> 
+<link rel="stylesheet" type="text/css" href="css/ress.css">
+<link rel="stylesheet" type="text/css" href="css/style.css">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+<script src="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js"></script>
+
+<script type="text/javascript">
+       $(function () {
+  const pageTop = $("#page-top");
+  pageTop.hide(); // 最初はボタンを非表示にする
+  $(window).scroll(function () {
+    if ($(this).scrollTop() > 100) { // 100pxスクロールしたら表示
+      pageTop.fadeIn(); // 100px以上スクロールしたらボタンをフェードイン
+    } else {
+      pageTop.fadeOut(); // 100px以下になったらボタンをフェードアウト
+    }
+  });
+  pageTop.click(function () {
+    $("body,html").animate(
+      {
+        scrollTop: 0, // 上から0pxの位置に戻る
+      },
+      500 // 500ミリ秒かけて戻る
+    );
+    return false;
+  });
+});
+</script>
+</head>
+
+<body>
+	<div id="contents">
+	<header>
+		<div id=logo>
+		<h1><a href="index.html"><img src="img/common/lomondrop_logo.png" alt="lemondroplogo"></a></h1>
+		</div><!--logo-->
+		<nav>
+			<ul>
+				<div class="nav_btn">
+				<li id="nav_home"><a href="index.html"><img src="img/common/home.png" alt="home"><img src="img/common/home_lemon.png" alt="home"></a></li>
+				</div><!--nav_btn-->
+				<div class="nav_btn">
+				<li  id="nav_menu"><a href="menu.html"><img src="img/common/menu.png" alt="menu"><img src="img/common/menu_lemon.png" alt="home"></a></li>
+				</div><!--nav_btn-->
+				<div class="nav_btn">
+				<li id="nav_news"><img src="img/common/news_lemon.png" alt="home"></li>
+				</div><!--nav_btn-->
+				<div class="nav_btn">
+				<li id="nav_acccess"><a href="access.html"><img src="img/common/access.png" alt="access"><img src="img/common/access_lemon.png" alt="home"></a></li>
+				</div><!--nav_btn-->
+				<div class="nav_btn">
+				<li id="nav_contact"><a href="contact.html"><img src="img/common/contact.png" alt="contact"><img src="img/common/contact_lemon.png" alt="home"></a></li>
+				</div><!--nav_btn-->
+				<li id="instagram"><a href="https://www.instagram.com/lemon_drop_okinawa/" target="_blank"><img src="img/common/insta_logo01.png"　alt="instagram"></a></li>
+			</ul>
+		</nav>
+	</header>
+
+	<div id="news">
+		<h1>NEWS</h1>
+		<div id="news_top" class="box fadeUpTrigger">
+			<figure>
+				<div id="news_image">
+					<img src="img/news/halloween_pc.png" alt="halloween" class="halloween">
+				</div><!--news_image-->
+				<figcaption><time datetime="2023-10-28">2023.10.28 Saturday</time><br>
+				Halloween night party</figcaption>
+			</figure>
+			<figure>
+				<div id="news_image">
+					<img src="img/news/foodfes04_pc.png" alt="foodfes04" class="foodfes04">
+				</div><!--news_image-->
+				<figcaption><time datetime="2023-08-12">2023.8.12 Saturday</time><br>
+				第4回サンシティ横丁<br>
+				フードフェス</figcaption>
+			</figure>
+			<figure>
+				<div id="news_image">
+					<img src="img/news/foodfes3_pc.png" alt="foodfes03" class="foodfes03">
+				</div><!--news_image-->
+				<figcaption><time datetime="2023-05-06">2023.5.6 Saturday</time><br>
+				第3回サンシティ横丁<br>
+				フードフェス</figcaption>
+			</figure>
+		</div><!--news_top-->
+		<div id="news_bottom" class="box fadeUpTrigger">
+			<figure>
+				<div id="news_image">
+					<img src="img/news/foodfes02_pc.png" alt="foodfes02" class="foodfes02">
+				</div><!--news_image-->
+				<figcaption><time datetime="2023-02-11">2023.2.11 Saturday</time><br>
+				第2回サンシティ横丁<br>
+				フードフェス</figcaption>
+			</figure>
+			<figure>
+				<div id="news_image">
+					<img src="img/news/grandopening_pc.png" alt="grandopening" class="grandopening">
+				</div><!--news_image-->
+				<figcaption><time datetime="2023-01-07">2023.1.7 Saturday</time><br>
+				Grand opening party</figcaption>
+			</figure>
+		</div><!--news_bottom-->
+	</div><!--news-->
+	
+
+	<footer>
+		<div id="page-top">
+  			<a href="#"><img src="img/common/btn_01.png" alt="上矢印"></a>
+		</div><!--page-top-->
+		<p id="copyright"><small>&copy; 2023 LEMON DROP</small></p>
+	</footer>
+	
+	</div><!--contents-->
+
+	<script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+	<script src="js/script.js"></script><!--←本体の下に設置しないと動きません！-->
+</body>
+
+</html>

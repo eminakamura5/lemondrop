@@ -1,0 +1,646 @@
+<!doctype html>
+<html>
+
+<head>
+<meta charset="UTF-8"> 
+<title>Cafe and Bar LEMON DROP</title>
+<meta name="description" content="サイトの説明が入ります"> 
+<link rel="stylesheet" type="text/css" href="css/ress.css">
+<link rel="stylesheet" type="text/css" href="css/menu.css">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+<script src="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js"></script>
+
+<script type="text/javascript">
+       $(function () {
+  const pageTop = $("#page-top");
+  pageTop.hide(); // 最初はボタンを非表示にする
+  $(window).scroll(function () {
+    if ($(this).scrollTop() > 100) { // 100pxスクロールしたら表示
+      pageTop.fadeIn(); // 100px以上スクロールしたらボタンをフェードイン
+    } else {
+      pageTop.fadeOut(); // 100px以下になったらボタンをフェードアウト
+    }
+  });
+  pageTop.click(function () {
+    $("body,html").animate(
+      {
+        scrollTop: 0, // 上から0pxの位置に戻る
+      },
+      500 // 500ミリ秒かけて戻る
+    );
+    return false;
+  });
+});
+</script>
+</head>
+
+<body>
+	<div id="contents">
+	<header>
+		<div id=logo>
+		<h1><a href="index.html"><img src="img/common/lomondrop_logo.png" alt="lemondroplogo"></a></h1>
+		</div><!--logo-->
+		<nav>
+			<ul>
+				<div class="nav_btn">
+				<li id="nav_home"><a href="index.html"><img src="img/common/home.png" alt="home"><img src="img/common/home_lemon.png" alt="home"></a></li>
+				</div><!--nav_btn-->
+				<div class="nav_btn">
+				<li  id="nav_menu"><img src="img/common/menu_lemon.png" alt="home"></li>
+				</div><!--nav_btn-->
+				<div class="nav_btn">
+				<li id="nav_news"><a href="news.html"><img src="img/common/news.png" alt="news"><img src="img/common/news_lemon.png" alt="home"></a></li>
+				</div><!--nav_btn-->
+				<div class="nav_btn">
+				<li id="nav_acccess"><a href="access.html"><img src="img/common/access.png" alt="access"><img src="img/common/access_lemon.png" alt="home"></a></li>
+				</div><!--nav_btn-->
+				<div class="nav_btn">
+				<li id="nav_contact"><a href="contact.html"><img src="img/common/contact.png" alt="contact"><img src="img/common/contact_lemon.png" alt="home"></a></li>
+				</div><!--nav_btn-->
+				<li id="instagram"><a href="https://www.instagram.com/lemon_drop_okinawa/" target="_blank"><img src="img/common/insta_logo01.png"　alt="instagram"></a></li>
+			</ul>
+		</nav>
+		
+	</header>
+
+	<main>
+		<div id="menu">
+			<h1>MENU</h1>
+			<div id="menu_btn">
+				<ul>
+				<div id="menu_btn_top">
+					<li id="BEER"><a href="#beer" class="btn btn-border-shadow btn-border-shadow--color">BEER</a></li>
+					<li id="WINE"><a href="#wine" class="btn btn-border-shadow btn-border-shadow--color">WINE</a></li>
+					<li id="CHAMPANE"><a href="#champane" class="btn btn-border-shadow btn-border-shadow--color">CHAMPANE</a></li>
+					<li id="AWAMORI_AND_SHOCHU"><a href="#awamori_and_shochu" class="btn btn-border-shadow btn-border-shadow--color">AWAMORI & SHOCHU</a></li>
+					<li id="WHISKEY"><a href="#whiskey" class="btn btn-border-shadow btn-border-shadow--color">WHISKEY</a></li>
+				</div><!--menu_btn_top-->
+				<div id="menu_btn_bottom">
+					<li id="COCKTAIL"><a href="#cocktail" class="btn btn-border-shadow btn-border-shadow--color">COCKTAIL</a></li>
+					<li id="SHOT"><a href="#shot" class="btn btn-border-shadow btn-border-shadow--color">SHOT</a></li>
+					<li id="BOMB"><a href="#bomb" class="btn btn-border-shadow btn-border-shadow--color">BOMB</a></li>
+					<li id="NON-ALCOHOLIC"><a href="#non_alcohoic" class="btn btn-border-shadow btn-border-shadow--color">NON-ALCOHOLIC</a></li>
+					<li id="FOOD"><a href="#food_menu" class="btn btn-border-shadow btn-border-shadow--color">FOOD</a></li>
+				</div><!--menu_btn_bottom-->
+				</ul>
+			</div><!--menu_btn-->
+
+			<div id="drink_menu">
+				<h3>DRINK</h3>
+				<div id="drink_menu_box">
+				<div id="drink_left">
+					<div id="beer">
+						<h4>BEER</h4>
+							<div id="beer_menu">
+								<dl>
+									<dt>ORION DRAFT</dt>
+									<dd>600</dd>
+
+									<dt>ORION DRAFT [ PITCHER ]</dt>
+									<dd>3000</dd>	
+
+									<dt>ASAHI</dt>
+									<dd>700</dd>
+
+									<dt>KIRIN</dt>
+									<dd>700</dd>
+
+									<dt>CORONA</dt>
+									<dd>700</dd>
+
+									<dt>BUDWEISER</dt>
+									<dd>700</dd>
+
+									<dt>HEINEKEN</dt>
+									<dd>700</dd>
+
+									<dt>ORION PREMIUM</dt>
+									<dd>700</dd>
+
+									<dt>GUINNESS</dt>
+									<dd>800</dd>
+
+									<dt>ORION ZERO [ NON-ALCOHOLIC ]</dt>
+									<dd>500</dd>
+								</dl>
+							</div><!--beer_menu-->
+					</div><!--beer-->
+					<div id="wine">
+						<h4>WINE</h4>
+							<div id="wine_menu">
+								<dl>
+									<dt>RED WINE</dt>
+									<dd>600</dd>
+
+									<dt>WHITE WINE</dt>
+									<dd>600</dd>
+								</dl>
+							</div><!--wine_menu-->
+					</div><!--wine-->
+					<div id="champane">
+						<h4>CHAMPANE</h4>
+							<div id="champane_menu">
+								<dl>
+									<dt>ROCCO DEL FORTI BRUT</dt>
+									<dd>3500</dd>
+
+									<dt>MOET & CHANDON BRUT</dt>
+									<dd>20000</dd>
+
+									<dt>VEUVE CRICQUOT BRUT</dt>
+									<dd>22000</dd>
+								</dl>
+							</div><!--champane_menu-->
+					</div><!--champane-->
+					<div id="awamori_and_shochu">
+						<h4>AWAMORI &amp; SHOCHU</h4>
+							<div id="awamori_and_shochu_menu">
+								<dl>
+									<dt>KUMESEN</dt>
+									<dd>500</dd>
+
+									<dt>KIKUNOTSUYU</dt>
+									<dd>500</dd>
+
+									<dt>TATSU</dt>
+									<dd>600</dd>
+
+									<dt>KUROKIRISHIMA</dt>
+									<dd>500</dd>
+								</dl>
+							</div><!--awamori_and_shochu_menu-->
+					</div><!--awamori_and_shochu-->
+					<div id="cocktail">
+						<h4>COCKTAIL</h4>
+							<div id="cocktail_menu_left">
+								<dl>
+									<dt class="vodka_base">VODKA BASE</dt>
+									<dt>VODKA SODA</dt>
+									<dd>600</dd>
+
+									<dt>VODKA TONIC</dt>
+									<dd>600</dd>
+
+									<dt>MOSCOW MULE</dt>
+									<dd>600</dd>
+
+									<dt>SCREWDRIVER</dt>
+									<dd>700</dd>
+
+									<dt>SALTY DOG</dt>
+									<dd>700</dd>
+
+									<dt>BLOODY MARY</dt>
+									<dd>700</dd>
+
+									<dt>WHITE RUSSIAN</dt>
+									<dd>700</dd>
+
+									<dt>SEA BREEZE</dt>
+									<dd>700</dd>
+
+									<dt>SEX ON THE BEACH</dt>
+									<dd>700</dd>
+
+									<dt>VODKA CRANBERRY</dt>
+									<dd>700</dd>
+
+									<dt>VODKA LYHCEE</dt>
+									<dd>700</dd>
+
+									<dt>VODKA RED BULL</dt>
+									<dd>800</dd>
+
+									<dt>COSMOPOLITAN</dt>
+									<dd>800</dd>
+
+									<dt class="gin_base">GIN BASE</dt>
+									<dt>GIN SODA</dt>
+									<dd>600</dd>
+
+									<dt>GIN TONIC</dt>
+									<dd>600</dd>
+
+									<dt>GIN ORANGE</dt>
+									<dd>700</dd>
+
+									<dt>MARTINI</dt>
+									<dd>1000</dd>
+
+									<dt class="rum_base">RUM BASE</dt>
+									<dt>RUM COKE</dt>
+									<dd>600</dd>
+
+									<dt>BLUE HAWAII</dt>
+									<dd>700</dd>
+
+									<dt>MAITAI</dt>
+									<dd>800</dd>
+
+									<dt>PINA COLADA</dt>
+									<dd>800</dd>
+
+									<dt>CAIPIRINHA</dt>
+									<dd>800</dd>
+
+									<dt>MOJITO</dt>
+									<dd>900</dd>
+
+									<dt class="tequila_base">TEQUILA BASE</dt>
+									<dt>TEQUILA COKE</dt>
+									<dd>600</dd>
+
+									<dt>TEQUILA SUNRISE</dt>
+									<dd>700</dd>
+
+									<dt>EL DIABLO</dt>
+									<dd>700</dd>
+
+									<dt>MARGARITA</dt>
+									<dd>800</dd>
+
+									<dt>STRAWBERRY MARGARITA</dt>
+									<dd>800</dd>
+								</dl>
+							</div><!--cocktail_menu_left-->
+					</div><!--cocktail-->
+					<div id="shot">
+						<h4>SHOT</h4>
+							<div id="shot_menu">
+								<dl>
+									<dt>HABU</dt>
+									<dd>500</dd>
+
+									<dt>JOSE CUERVO</dt>
+									<dd>500</dd>
+
+									<dt>1800 BLANCO</dt>
+									<dd>800</dd>
+
+									<dt>DON JULIO BLANCO</dt>
+									<dd>800</dd>
+
+									<dt>PATRON</dt>
+									<dd>1000</dd>
+
+									<dt>TEQUILA ROSE</dt>
+									<dd>600</dd>
+
+									<dt>JAGERMIESTER</dt>
+									<dd>500</dd>
+
+									<dt>COCALERO</dt>
+									<dd>800</dd>
+
+									<dt class="mixed_shot">MIXED SHOT</dt>
+									<dt>LEMON DROP</dt>
+									<dd>500</dd>
+
+									<dt>SNAKE BITE</dt>
+									<dd>500</dd>
+
+									<dt>KAMIKAZE</dt>
+									<dd>600</dd>
+
+									<dt>GRASSHOPPER</dt>
+									<dd>600</dd>
+
+									<dt>ALIAN BRAIN HEMORRHAGE</dt>
+									<dd>600</dd>
+
+									<dt>B-52</dt>
+									<dd>600</dd>
+
+									<dt>LIQUID MARIJUANA</dt>
+									<dd>700</dd>
+
+									<dt>BUTTERFLY NIPPLE</dt>
+									<dd>600</dd>
+
+									<dt>ROYAL FLASH</dt>
+									<dd>600</dd>
+
+									<dt>WOO WOO</dt>
+									<dd>600</dd>
+
+									<dt>WASHINTON APPLE</dt>
+									<dd>600</dd>
+
+									<dt>RED HEAD SLUT</dt>
+									<dd>600</dd>
+
+									<dt>DUCK FART</dt>
+									<dd>600</dd>
+
+									<dt>SURFER ON ACID</dt>
+									<dd>600</dd>
+
+									<dt>STRAWBERRY CHEESE CAKE</dt>
+									<dd>700</dd>
+
+									<dt>JUICY PUSSY</dt>
+									<dd>600</dd>
+
+									<dt>GREEN TEA</dt>
+									<dd>700</dd>
+
+									<dt>BLOW JOB</dt>
+									<dd>700</dd>
+
+									<dt>PANCAKE BREAKFAST</dt>
+									<dd>800</dd>
+
+									<dt>INCREDIBLE HULK</dt>
+									<dd>800</dd>
+								</dl>
+							</div><!--cocktail_menu_left-->
+					</div><!--cocktail-->
+
+				</div><!--drink_left-->
+
+				<div id="drink_right">
+					<div id="whiskey">
+						<h4>WHISKEY</h4>
+							<div id="whiskey_menu">
+								<dl>
+									<dt class="japanese">JAPANESE</dt>
+									<dt>SANTORY KAKU</dt>
+									<dd>500</dd>
+
+									<dt>YAMAZAKI</dt>
+									<dd>1500</dd>
+
+									<dt>YAMAZAKI 12y</dt>
+									<dd>2500</dd>
+
+									<dt>HIBIKI</dt>
+									<dd>1500</dd>
+
+									<dt class="irish">IRISH</dt>
+									<dt>JAMESON</dt>
+									<dd>600</dd>
+
+									<dt class="canadian">CANADIAN</dt>
+									<dt>CROWN ROYAL</dt>
+									<dd>600</dd>
+
+									<dt class="bourbon">BOURBON AND TENNESSEE</dt>
+									<dt>JIM BEAM</dt>
+									<dd>500</dd>
+
+									<dt>MAKERS MARK</dt>
+									<dd>600</dd>
+
+									<dt>JACK DANIELS</dt>
+									<dd>600</dd>
+
+									<dt>BULLEIT</dt>
+									<dd>800</dd>
+
+									<dt>WOODFORD RESERVE</dt>
+									<dd>900</dd>
+
+									<dt class="single_molt_scotch">SINGLE MOLT SCOTCH</dt>
+									<dt>GLENFIDDICH 12y</dt>
+									<dd>900</dd>
+
+									<dt>GLENLIVET 12y</dt>
+									<dd>1000</dd>
+									
+									<dt>GLENMORANGIE</dt>
+									<dd>1000</dd>
+
+									<dt>LAPHROAIG 10y</dt>
+									<dd>1000</dd>
+
+									<dt class="blended_scotch">BLENDED SCOTCH</dt>
+									<dt>DEWAR’S</dt>
+									<dd>500</dd>
+									
+									<dt>DEWER’S  12y</dt>
+									<dd>600</dd>
+
+									<dt>JOHNNY WALKER BLACK</dt>
+									<dd>700</dd>
+
+									<dt>JOHNNY WALKER BLUE</dt>
+									<dd>3000</dd>
+
+									<dt class="taiwanese_molt">TAIWANESE MOLT</dt>
+									<dt>KAVALAN</dt>
+									<dd>3000</dd>
+
+									<dt class="cognac">COGNAC</dt>
+									<dt>HENNESSY</dt>
+									<dd>800</dd>
+
+									<p class="drink_detail">✤ SODA +100 / JUICE +200 / RED BULL +300</p>
+								</dl>
+							</div><!--whiskey_menu-->
+					</div><!--whiskey-->
+							<div id="cocktail_menu_right">
+								<dl>
+									<dt class="liqueur_base">LIQUEUR BASE</dt>
+									<dt>MALIBU COKE</dt>
+									<dd>600</dd>
+
+									<dt>MALIBU ORANGE</dt>
+									<dd>700</dd>
+
+									<dt>MALIBU PINEAPPLE</dt>
+									<dd>700</dd>
+
+									<dt>PEACH SODA</dt>
+									<dd>600</dd>
+
+									<dt>FUZZY NABLE</dt>
+									<dd>700</dd>
+
+									<dt>PEACH OOLONG</dt>
+									<dd>600</dd>
+
+									<dt>CASSIS ORANGE</dt>
+									<dd>700</dd>
+
+									<dt>KAHLUA MILK</dt>
+									<dd>600</dd>
+
+									<dt>PASSOA ORANGE</dt>
+									<dd>700</dd>
+
+									<dt>CHINA BLUE</dt>
+									<dd>700</dd>
+
+									<dt>AMARETTO SOUR</dt>
+									<dd>700</dd>
+
+									<dt class="wine_base">WINE BASE</dt>
+									<dt>KITTY</dt>
+									<dd>700</dd>
+
+									<dt>OPERATOR</dt>
+									<dd>700</dd>
+
+									<dt>AMERICAN LEMONADE</dt>
+									<dd>700</dd>
+
+									<dt class="beer_base">BEER BASE</dt>
+									<dt>SHANDY GAFF</dt>
+									<dd>700</dd>
+
+									<dt>RED EYE</dt>
+									<dd>700</dd>
+
+									<dt>MANGO BEER</dt>
+									<dd>700</dd>
+
+									<dt>PINEAPPLE BEER</dt>
+									<dd>700</dd>
+
+									<dt class="whiskey_base">WHISKEY BASE</dt>
+									<dt>HIGHBALL</dt>
+									<dd>600</dd>
+
+									<dt>OLD FASHIONED</dt>
+									<dd>700</dd>
+
+									<dt class="others">OTHERS</dt>
+									<dt>LONG ISLAND ICE TEA</dt>
+									<dd>900</dd>
+
+									<dt>AMF</dt>
+									<dd>900</dd>
+
+									<dt>IRISH TRASH CAN</dt>
+									<dd>1500</dd>
+
+									<dt>LEMON SOUR</dt>
+									<dd>600</dd>
+
+									<dt>OOLONG HIGH</dt>
+									<dd>600</dd>
+
+									<dt>JASMINE HIGH</dt>
+									<dd>600</dd>
+								</dl>
+							</div><!--cocktail_menu_right-->
+					<div id="bomb">
+						<h4>BOMB</h4>
+							<div id="bomb_menu">
+								<dl>
+									<dt>JAGER BOMB</dt>
+									<dd>800</dd>
+
+									<dt>VEGAS BOMB</dt>
+									<dd>800</dd>
+
+									<dt>IRISH CAR BOMB</dt>
+									<dd>900</dd>
+
+									<dt>COCALERO BOMB</dt>
+									<dd>1000</dd>
+								</dl>
+							</div><!--bomb_menu-->
+					</div><!--bomb-->
+					<div id="non_alcohoic">
+						<h4>NON-ALCOHOLIC</h4>
+							<div id="non_alcohoic_menu">
+								<dl>
+									<dt>COKE</dt>
+									<dd>400</dd>
+
+									<dt>GINGER ALE</dt>
+									<dd>400</dd>
+
+									<dt>SPRITE</dt>
+									<dd>400</dd>
+
+									<dt>TONIC WATER</dt>
+									<dd>400</dd>
+
+									<dt>OOLONG TEA</dt>
+									<dd>400</dd>
+
+									<dt>JASMINE TEA</dt>
+									<dd>400</dd>
+
+									<dt>EARL GRAY TEA</dt>
+									<dd>500</dd>
+
+									<dt>ORANGE JUICE</dt>
+									<dd>500</dd>
+
+									<dt>PINEAPPLE JUICE</dt>
+									<dd>500</dd>
+
+									<dt>GRAPEFRUIT JUICE</dt>
+									<dd>500</dd>
+
+									<dt>MANGO JUICE</dt>
+									<dd>500</dd>
+
+									<dt>CRANBERRY JUICE</dt>
+									<dd>500</dd>
+
+									<dt>LYCHEE JUICE</dt>
+									<dd>500</dd>
+
+									<dt>ICED COFFEE</dt>
+									<dd>500</dd>
+
+									<dt>RED BULL</dt>
+									<dd>500</dd>
+
+									<dt>UKON</dt>
+									<dd>400</dd>
+								</dl>
+							</div><!--non_alcohoic_menu-->
+					</div><!--non_alcohoic-->
+
+				</div><!--drink_left-->
+				</div><!--drink_menu01-->
+
+			</div><!--drink_menu-->
+
+			<div id="food_menu">
+				<h3>FOOD</h3>
+				<div id="food_menu_box">
+					<div id="food_left">
+								<dl>
+									<dt>EDAMAME</dt>
+									<dd>400</dd>
+
+									<dt>POPCORN</dt>
+									<dd>500</dd>	
+
+									<dt>TAKOYAKI</dt>
+									<dd>12p&nbsp;800</dd>
+								</dl>
+					</div><!--food_left-->
+					<div id="food_right">
+								<dl>
+									<dt>KARAAGE CHICKEN</dt>
+									<dd>800</dd>
+
+									<dt>CHICKEN WINGS</dt>
+									<p id="chicken_wings">5p&nbsp;800&nbsp;/&nbsp;10p&nbsp;1200</p>
+								</dl>
+					</div><!--food_right-->
+				</div><!--food_menu_box-->
+		</div><!--menu-->
+	</main>
+
+	<footer>
+		<div id="page-top">
+  			<a href="#"><img src="img/common/btn_01.png" alt="上矢印"></a>
+		</div><!--page-top-->
+		<p id="copyright"><small>&copy; 2023 LEMON DROP</small></p>
+	</footer>
+	
+	</div><!--contents-->
+</body>
+
+
+</html>

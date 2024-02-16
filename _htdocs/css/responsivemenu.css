@@ -1,0 +1,334 @@
+@charset "UTF-8";
+
+@media screen and ( max-width:750px )
+{
+
+/* スマートフォンで見たときは"sp"のclassがついたものが表示される */
+.pc { display: none !important; }
+.sp { display: block !important; }
+
+body{
+	background-color: #000000;
+	color: #ffffff;
+}
+
+#contents{
+	width: 750px;
+	margin: 0 auto;
+}
+
+header{
+	width: 750px;
+	display: flex; /*ロゴとulを横に並べる*/
+}
+
+#logo{
+	height: 140px;
+	padding-top: 20px;
+}
+
+nav{
+	height: 140px;
+	padding: 0 0 0 0;
+}
+
+nav ul{
+	display: flex;
+	list-style: none;
+}
+
+nav ul li a{
+    text-decoration: none;
+    color: #ffffff;
+}
+
+#instagram{
+	margin-top: 46px;
+	margin-left: 30px;
+}
+
+/* nav ホバー画像入れ替え ここから↓ */
+
+.nav_btn {
+	position: relative;
+	width: 140px;
+	height: 88px;
+	margin-top: 26px;
+	margin-left: 20px;
+	display: block;
+	border-radius: 12px;
+	overflow: hidden;
+	cursor: pointer;
+}
+.nav_btn img {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	-webkit-transform: translate(-50%, -50%);
+	transform: translate(-50%, -50%);
+	width: 100%;
+	display: block;
+	-webkit-transition: .4s ease-in-out;
+	transition: .4s ease-in-out;
+}
+.nav_btn img:nth-of-type(2) {
+	top: -100%;
+}
+.nav_btn:hover img:nth-of-type(2) {
+	top: 50%;
+}
+
+/* nav ホバー画像入れ替え ここまで↑ */
+
+/* menu_btn 動き　ここから↓ */
+*,
+*:before,
+*:after {
+  -webkit-box-sizing: inherit;
+  box-sizing: inherit;
+}
+
+html {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  font-size: 62.5%;
+}
+
+/* 背景用*/
+body {
+  padding: 30px;
+}
+
+.btn,
+a.btn,
+button.btn {
+	font-family: "elephant";
+  font-size: 24px;
+  font-weight: 500;
+  line-height: 80px;
+  width: 230px;
+  position: relative;
+  display: inline-block;
+  padding: 1rem 5rem;
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+  text-align: center;
+  vertical-align: middle;
+  text-decoration: none;
+  letter-spacing: 0.05em;
+  color: #ffff00;
+  border-radius: 0.5rem;
+}
+
+a.btn-border-shadow {
+  padding: calc(1.5rem - 12px) 3rem 1.5rem;
+  background: #fff;
+}
+
+a.btn-border-shadow:before {
+  position: absolute;
+  top: -6px;
+  left: -6px;
+  width: 100%;
+  height: 100%;
+  content: "";
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+  border: 3px solid #ffff00;
+  border-radius: 0.5rem;
+}
+
+a.btn-border-shadow:hover {
+  padding: calc(1.5rem - 6px) 3rem;
+}
+
+a.btn-border-shadow:hover:before {
+  top: 0;
+  left: 0;
+}
+
+a.btn-border-shadow--color {
+  border-radius: 0;
+  background: #aeaeae;
+}
+
+a.btn-border-shadow--color:before {
+  border-radius: 0;
+}
+
+/* menu_btn 動き　ここまで↑ */
+
+#menu_btn_top{
+	margin-top: 40px;
+}
+
+#menu_btn_top, #menu_btn_bottom{
+	display: flex;
+	list-style: none;
+	margin-left: 10px;
+}
+
+#menu_btn li{
+	margin-left: 20px;
+}
+
+/* menu詳細 ここから↓ */
+
+#drink_menu h3{
+	margin-top: 100px;
+}
+
+ #drink_menu_box, #food_menu_box{
+ 	width: 1280px;
+ 	margin: 0 auto;
+	display: flex;
+	margin-top: 40px;
+}
+
+#drink_left, #food_left{
+	width: 640px;
+	margin: 0 auto;
+}
+
+#drink_right{
+	width: 640px;
+	margin: 0 auto;
+}
+
+dl{
+	font-family: Noto Sans JP;
+}
+
+#wine, #champane, #awamori_and_shochu, #non_alcohoic{
+	padding-top: 50px;
+}
+
+#cocktail{
+	margin-top: 120px;
+}
+
+#shot{
+	margin-top: 100px;
+}
+
+#whiskey{
+	margin-top: 0px;
+}
+
+#bomb{
+	margin-top: 180px;
+}
+
+#cocktail_menu_right{
+	margin-top: 285px;
+}
+
+#menu h1, h3{
+	font-size: 64px;
+	font-family: elephant;
+	text-align: center;
+	font-weight: 500;
+	margin-top: 120px;
+}
+
+#drink_menu h4{
+	font-size: 40px;
+	font-family: elephant;
+	font-weight: 500;
+	color: #ffff00;
+}
+
+#drink_menu dt, #food_menu dt{
+	font-size: 24px;
+	margin-top: 20px;
+}
+
+#drink_menu dd, #food_menu dd{
+	font-size: 24px;
+}
+
+#whiskey_menu .japanese, #whiskey_menu .irish, #whiskey_menu .canadian, #whiskey_menu .bourbon, #whiskey_menu .single_molt_scotch, #whiskey_menu .blended_scotch, #whiskey_menu .taiwanese_molt, #whiskey_menu .cognac, #cocktail_menu_left .vodka_base, #cocktail_menu_left .gin_base, #cocktail_menu_left .rum_base, #cocktail_menu_left .tequila_base, #cocktail_menu_right .liqueur_base, #cocktail_menu_right .wine_base, #cocktail_menu_right .beer_base, #cocktail_menu_right .whiskey_base, #cocktail_menu_right .others, #shot_menu .mixed_shot{
+	font-size: 16px;
+	color: #aeaeae;
+	margin-bottom: -15px;
+}
+
+.drink_detail{
+	width: 640px;
+	font-size: 24px;
+	color: #aeaeae;
+	text-align: center;
+	margin-top: 50px;
+}
+
+#food_menu_box{
+ 	width: 1280px;
+ 	margin: 0 auto;
+	display: flex;
+	margin-top: 40px;
+}
+
+/* 追加_2行になるメニューbtnの行間や位置の調整 */
+
+li#AWAMORI_AND_SHOCHU a, li#NON-ALCOHOLIC a{
+	line-height: 1.2em !important;
+	height: 98px;
+	padding: 16px 0 0 0;
+	margin: 0 0 10px 0;
+}
+li#AWAMORI_AND_SHOCHU a:hover,li#NON-ALCOHOLIC a:hover{
+	padding: 20px 0 0 0;
+}
+
+/* メニューのdt・dd並び替え */
+
+#drink_menu h4{
+	margin: 50px 0 0 0;
+	padding: 0 0 20px 80px;
+}
+
+dl{
+	width: 640px;
+}
+
+dt{
+	width: 470px;
+	padding: 0 0 0 80px;
+}
+
+dd{
+	width: 170px;
+	margin: -38px 0 0 470px;
+	padding: 0 80px 0 0;
+	text-align: right;
+}
+
+#chicken_wings{
+	font-size: 24px;
+	width: 300px;
+	margin: -38px 0 0 340px;
+	padding: 0 80px 0 0;
+	text-align: right;
+}
+
+/* menu詳細 ここまで↑ */
+
+#page-top a {
+  bottom: 0;
+  padding: 20px;
+  position: fixed;
+  right: 0;
+}
+
+footer p{
+	font-size: 12px;
+	text-align: center;
+	margin: 50px;
+}
+
+}

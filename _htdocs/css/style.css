@@ -1,0 +1,486 @@
+@charset "UTF-8";
+
+body{
+	background-color: #000000;
+	color: #ffffff;
+}
+
+#contents{
+	width: 1280px;
+	margin: 0 auto;
+}
+
+header{
+	width: 1280px;
+	display: flex; /*ロゴとulを横に並べる*/
+	margin-bottom: 20px;
+}
+
+#logo{
+	height: 140px;
+	padding-top: 20px;
+}
+
+nav{
+	height: 140px;
+	padding: 0 0 0 0;
+}
+
+nav ul{
+	display: flex;
+	list-style: none;
+}
+
+nav ul li a{
+    text-decoration: none;
+    color: #ffffff;
+}
+
+#instagram{
+	margin-top: 46px;
+	margin-left: 30px;
+}
+
+/* nav ホバー画像入れ替え ここから↓ */
+
+.nav_btn {
+	position: relative;
+	width: 140px;
+	height: 88px;
+	margin-top: 26px;
+	margin-left: 20px;
+	display: block;
+	border-radius: 12px;
+	overflow: hidden;
+	cursor: pointer;
+}
+.nav_btn img {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	-webkit-transform: translate(-50%, -50%);
+	transform: translate(-50%, -50%);
+	width: 100%;
+	display: block;
+	-webkit-transition: .4s ease-in-out;
+	transition: .4s ease-in-out;
+}
+.nav_btn img:nth-of-type(2) {
+	top: -100%;
+}
+.nav_btn:hover img:nth-of-type(2) {
+	top: 50%;
+}
+
+/* nav ホバー画像入れ替え ここまで↑ */
+
+.bx-wrapper{
+	width: 1280px;
+}
+
+.slider{
+	width: 1280px;
+}
+
+#sliderLogo{
+	width: 1280px;
+	position: absolute;
+	z-index: 9999;
+	text-align: center;
+	top: 0;
+	margin: 170px 0 0 0;
+}
+
+#menu h2{
+	margin-top: 400px;
+	margin-left: 820px;
+}
+
+#cocktail{
+	margin-top: -280px;
+	margin-left: 80px;
+}
+
+#shot{
+	margin-top: -150px;
+	margin-left: 400px;
+}
+
+#access h2{
+	margin-top: 380px;
+	margin-left: 100px;
+}
+
+.map{
+	width: 600px;
+	height: 400px;
+	margin-top: -260px;
+	margin-left: 580px;
+}
+
+#contact h2{
+	margin-top: 240px;
+	margin-left: 100px;
+}
+
+#contact ul{
+	display: flex;
+	margin-top: 80px;
+	justify-content: center;
+}
+
+#contact li .instaimage{
+	margin-left: 0px;
+}
+
+#page-top a {
+  bottom: 0;
+  padding: 20px;
+  position: fixed;
+  right: 0;
+}
+
+footer p{
+	font-size: 12px;
+	text-align: center;
+	margin-top: 50px;
+}
+
+/* topページ btn3つ ここから↓ */
+*,
+*:before,
+*:after {
+  -webkit-box-sizing: inherit;
+  box-sizing: inherit;
+}
+
+html {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  font-size: 62.5%;
+}
+
+/* 背景用*/
+body {
+  padding: 30px;
+}
+
+.btn,
+a.btn,
+button.btn {
+	font-family: "elephant";
+  font-size: 64px;
+  font-weight: 500;
+  line-height: 1.5;
+  position: relative;
+  display: inline-block;
+  padding: 1rem 4rem;
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+  text-align: center;
+  vertical-align: middle;
+  text-decoration: none;
+  letter-spacing: 0.05em;
+  color: #ffff00;
+  border-radius: 0.5rem;
+}
+
+a.btn-border-shadow {
+  padding: calc(1.5rem - 12px) 3rem 1.5rem;
+  background: #fff;
+}
+
+a.btn-border-shadow:before {
+  position: absolute;
+  top: -6px;
+  left: -6px;
+
+  width: 100%;
+  height: 100%;
+
+  content: "";
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+
+  border: 3px solid #ffff00;
+  border-radius: 0.5rem;
+}
+
+a.btn-border-shadow:hover {
+  padding: calc(1.5rem - 6px) 3rem;
+}
+
+a.btn-border-shadow:hover:before {
+  top: 0;
+  left: 0;
+}
+
+a.btn-border-shadow--color {
+  border-radius: 0;
+  background: #aeaeae;
+}
+
+a.btn-border-shadow--color:before {
+  border-radius: 0;
+}
+
+/* topページ btn3つ ここまで↑ */
+
+#menu img, #access img, #contact img{
+	margin-left: 20px;
+}
+
+/* topページ ここまで↑ */
+
+/* menuページ css別途あり*/
+
+/* newsページ ここから↓ */
+
+#news h1{
+	font-size: 64px;
+	font-family: elephant;
+	text-align: center;
+	font-weight: 500;
+	margin-top: 120px;
+}
+
+#news_top, #news_bottom{
+	display: flex;
+	margin-top: 100px;
+}
+
+#news_top img, #news_bottom img{
+	margin-left: 130px;
+}
+
+#news figure figcaption time{
+	font-family: Noto Sans JP;
+	color: #aeaeae;
+	font-size: 20px;
+}
+
+#news figure figcaption{
+	font-family: Noto Sans JP;
+	color: #ffffff;
+	font-size: 24px;
+	margin-left: 130px;
+}
+
+#news_image{
+	height: 350px;
+	margin-bottom: 20px;
+}
+
+/* newsページ ここまで↑ */
+
+/* accessページ ここから↓ */
+
+.access h1{
+	font-size: 64px;
+	font-family: elephant;
+	text-align: center;
+	font-weight: 500;
+	margin-top: 120px;
+}
+
+.access_detail h2, .entrance_box h2{
+	font-size: 40px;
+	color: #ffff00;
+	font-family: elephant;
+	font-weight: 500;
+}
+
+.access_detail p, .entrance p{
+	font-size: 20px;
+	font-family: Noto Sans JP;
+}
+
+.access_box{
+	width: 1280px;
+	height: 400px;
+	margin-top: 100px;
+	display: flex;
+}
+
+.access_map{
+	width: 640px;
+}
+
+.access_detail{
+	width: 640px;
+	margin-left: 40px;
+}
+
+#address{
+	margin-top: 30px;
+}
+
+#business_hours{
+	margin-top: 30px;
+}
+
+#tel{
+	margin-top: 30px;
+}
+
+#instagram_add{
+	margin-top: 30px;
+	display: flex;
+	align-items: center;
+}
+
+.access_insta_logo{
+	margin-top: 4px;
+	margin-right: 10px;
+}
+
+iframe {
+  width: 100%;
+  height: 100%;
+  aspect-ratio: 16/9; //アスペクト比（縦横比）を指定
+}
+
+.access_detail a{
+	color: #f0e68c;
+}
+
+.access_detail a:visited {
+ color: #aeaeae;
+}
+
+.access_detail a:hover{
+ color: #ffff00;
+}
+
+.entrance_box{
+	width: 1280px;
+	margin-top: 150px;
+}
+
+.entrance{
+	width: 670px;
+	height: 250px;
+	margin-top: 40px;
+}
+
+#entrance_detail_jp{
+	margin-top: 30px;
+}
+
+#entrance_detail_eng{
+	margin-top: 30px;
+}
+
+#entrance01{
+	width: 400px;
+	height: 516px;
+	margin-left: 880px;
+	margin-top: -290px;
+}
+
+#map_detail{
+	width: 500px;
+	height: 350px;
+	margin-left: 500px;
+	margin-top: -200px;
+}
+
+/* accessページ ここまで↑ */
+
+/* contactページ ここから↓ */
+
+.contact h1{
+	font-size: 64px;
+	font-family: elephant;
+	text-align: center;
+	font-weight: 500;
+	margin-top: 120px;
+}
+
+.contact h2{
+	font-size: 40px;
+	color: #ffff00;
+	font-family: Noto Sans JP;
+	text-align: center;
+	margin-top: 50px;
+}
+
+.contact h3{
+	font-size: 40px;
+	font-family: elephant;
+	text-align: center;
+	font-weight: 500;
+	margin-top: 80px;
+}
+
+#contact_instagram{
+	text-align: center;
+	margin-top: 50px;
+}
+
+.contact p{
+	font-size: 24px;
+	font-family: Noto Sans JP;
+	text-align: center;
+	margin-top: 40px;
+}
+
+/* contactページ ここまで↑ */
+
+
+
+/*========= レイアウトのためのCSS ===============*/
+
+.wrapper{
+  overflow: hidden;
+}
+
+
+.box{
+  width: 0px;
+  padding: 0px;
+  margin:0 0px 0px 0;
+  background: #666;
+  color: #fff;
+  box-sizing:border-box;
+}
+
+
+
+/*==================================================
+ふわっ
+===================================*/
+
+
+/* fadeUp */
+
+.fadeUp{
+animation-name:fadeUpAnime;
+animation-duration:0.5s;
+animation-fill-mode:forwards;
+opacity:0;
+}
+
+@keyframes fadeUpAnime{
+  from {
+    opacity: 0;
+  transform: translateY(100px);
+  }
+
+  to {
+    opacity: 1;
+  transform: translateY(0);
+  }
+}
+
+
+/* スクロールをしたら出現する要素にはじめに透過0を指定　*/
+ 
+.fadeUpTrigger{
+    opacity: 0;
+}

@@ -1,0 +1,94 @@
+<!doctype html>
+<html>
+
+<head>
+<meta charset="UTF-8"> 
+<title>Cafe and Bar LEMON DROP</title>
+<meta name="description" content="サイトの説明が入ります"> 
+<link rel="stylesheet" type="text/css" href="css/ress.css">
+<link rel="stylesheet" type="text/css" href="css/style.css">
+<link rel="stylesheet" type="text/css" href="css/responsive.css">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+<script src="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js"></script>
+
+<script type="text/javascript">
+       $(function () {
+  const pageTop = $("#page-top");
+  pageTop.hide(); // 最初はボタンを非表示にする
+  $(window).scroll(function () {
+    if ($(this).scrollTop() > 100) { // 100pxスクロールしたら表示
+      pageTop.fadeIn(); // 100px以上スクロールしたらボタンをフェードイン
+    } else {
+      pageTop.fadeOut(); // 100px以下になったらボタンをフェードアウト
+    }
+  });
+  pageTop.click(function () {
+    $("body,html").animate(
+      {
+        scrollTop: 0, // 上から0pxの位置に戻る
+      },
+      500 // 500ミリ秒かけて戻る
+    );
+    return false;
+  });
+});
+</script>
+</head>
+
+<body>
+	<div id="contents">
+	<header>
+		<div id=logo>
+		<h1><a href="index.html"><img src="img/common/lomondrop_logo.png" alt="lemondroplogo"></a></h1>
+		</div><!--logo-->
+		<nav class="pc">
+			<ul>
+				<div class="nav_btn">
+				<li id="nav_home"><a href="index.html"><img src="img/common/home.png" alt="home"><img src="img/common/home_lemon.png" alt="home"></a></li>
+				</div><!--nav_btn-->
+				<div class="nav_btn">
+				<li  id="nav_menu"><a href="menu.html"><img src="img/common/menu.png" alt="menu"><img src="img/common/menu_lemon.png" alt="home"></a></li>
+				</div><!--nav_btn-->
+				<div class="nav_btn">
+				<li id="nav_news"><a href="news.html"><img src="img/common/news.png" alt="news"><img src="img/common/news_lemon.png" alt="home"></a></li>
+				</div><!--nav_btn-->
+				<div class="nav_btn">
+				<li id="nav_acccess"><a href="access.html"><img src="img/common/access.png" alt="access"><img src="img/common/access_lemon.png" alt="home"></a></li>
+				</div><!--nav_btn-->
+				<div class="nav_btn">
+				<li id="nav_contact"><img src="img/common/contact_lemon.png" alt="home"></li>
+				</div><!--nav_btn-->
+				<li id="instagram"><a href="https://www.instagram.com/lemon_drop_okinawa/" target="_blank"><img src="img/common/insta_logo01.png"　alt="instagram"></a></li>
+			</ul>
+		</nav>
+	</header>
+
+	<main>
+	<div class="contact">
+		<h1>CONTACT</h1>
+		<h2>080-7849-5680</h2>
+		<h3>FOLLOW US</h3>
+		<div id="contact_instagram">
+			<a href="https://www.instagram.com/lemon_drop_okinawa/" target="_blank"><img src="img/contact/insta_logo02.png" alt="insta_logo_big"></a>
+		</div><!--contact_instagram-->
+		<p>Instagramで情報発信しています。<br>
+		ぜひFollowしてお待ちください。</p>
+		
+	</div><!--contact-->
+			
+	
+	</main>
+
+	<footer>
+		<div id="page-top">
+  			<a href="#"><img src="img/common/btn_01.png" alt="上矢印"></a>
+		</div><!--page-top-->
+		<p id="copyright"><small>&copy; 2023 LEMON DROP</small></p>
+	</footer>
+
+	</div><!--contents-->
+</body>
+
+</html>
